@@ -1,0 +1,34 @@
+{
+  "doc_id": "1701.07875",
+  "seq": 1,
+  "question": "What is the name of the example labelled exa::lines?",
+  "runs": 5,
+  "n_tokens": 1996,
+  "answer": " Wasserstein GAN",
+  "answer_same_every_run": true,
+  "prefill_ms_median": 17811.596,
+  "prefill_ms_all": [
+    15056,
+    18811,
+    19483,
+    17812,
+    16246
+  ],
+  "answer_ms_median": 582.956,
+  "prefill_tok_per_s_median": 112.06182758692707,
+  "replace": {
+    "node": 11,
+    "seq": 5,
+    "recomputed_tokens": 111,
+    "ms_median": 947.093,
+    "identical_every_run": true
+  },
+  "evict": {
+    "seq": 2,
+    "p0": 10,
+    "p1": 284,
+    "kv_kib_before": 57845.7783203125,
+    "kv_kib_after": 49074.5673828125,
+    "identical_every_run": true
+  }
+}

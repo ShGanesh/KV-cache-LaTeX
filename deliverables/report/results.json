@@ -1,0 +1,197 @@
+{
+  "results": [
+    {
+      "doc": "1406.2661",
+      "question": "In Algorithm 1, what value of k was used in the experiments?",
+      "seq_A": 1,
+      "choice": "anchor found",
+      "answer": " 1",
+      "expected": "1",
+      "answer_correct": true,
+      "answer_same_every_run": true,
+      "test_a": {
+        "seq_B": 5,
+        "node": 18,
+        "recomputed_tokens": 26,
+        "pass": true
+      },
+      "test_b": {
+        "seq_C": 2,
+        "evicted_tokens": 378,
+        "kv_kib_before": 62109.8,
+        "kv_kib_after": 50009.3,
+        "kv_kib_dropped": 12100.4,
+        "kv_kib_expected": 12096.0,
+        "pass": true
+      },
+      "timings_ms_median": {
+        "prefill": 16400,
+        "answer": 547,
+        "replace": 307
+      },
+      "n_tokens": 1997,
+      "runs": 5
+    },
+    {
+      "doc": "1701.07875",
+      "question": "What is the name of the example labelled exa::lines?",
+      "seq_A": 1,
+      "choice": "anchor found",
+      "answer": " Wasserstein GAN",
+      "expected": "Learning parallel lines",
+      "answer_correct": false,
+      "answer_same_every_run": true,
+      "test_a": {
+        "seq_B": 5,
+        "node": 11,
+        "recomputed_tokens": 111,
+        "pass": true
+      },
+      "test_b": {
+        "seq_C": 2,
+        "evicted_tokens": 274,
+        "kv_kib_before": 57845.8,
+        "kv_kib_after": 49074.6,
+        "kv_kib_dropped": 8771.2,
+        "kv_kib_expected": 8768.0,
+        "pass": true
+      },
+      "timings_ms_median": {
+        "prefill": 17812,
+        "answer": 583,
+        "replace": 947
+      },
+      "n_tokens": 1996,
+      "runs": 5
+    },
+    {
+      "doc": "1706.03762",
+      "question": "What BLEU score does the Transformer (big) achieve on English-to-German?",
+      "seq_A": 4,
+      "choice": "anchor found",
+      "answer": " \\textbf{41.8",
+      "expected": "28.4",
+      "answer_correct": false,
+      "answer_same_every_run": true,
+      "test_a": {
+        "seq_B": 5,
+        "node": 22,
+        "recomputed_tokens": 308,
+        "pass": true
+      },
+      "test_b": {
+        "seq_C": 1,
+        "evicted_tokens": 152,
+        "kv_kib_before": 60699.4,
+        "kv_kib_after": 55833.6,
+        "kv_kib_dropped": 4865.8,
+        "kv_kib_expected": 4864.0,
+        "pass": true
+      },
+      "timings_ms_median": {
+        "prefill": 17393,
+        "answer": 975,
+        "replace": 2942
+      },
+      "n_tokens": 1998,
+      "runs": 5
+    },
+    {
+      "doc": "1806.07572",
+      "question": "What is the input distribution assumed to be?",
+      "seq_A": 1,
+      "choice": "anchor found",
+      "answer": " The input distribution is assumed to be the empirical distribution on a finite dataset $x_1, ..., x_N$",
+      "expected": "empirical",
+      "answer_correct": true,
+      "answer_same_every_run": true,
+      "test_a": {
+        "seq_B": 6,
+        "node": 16,
+        "recomputed_tokens": 25,
+        "pass": true
+      },
+      "test_b": {
+        "seq_C": 2,
+        "evicted_tokens": 444,
+        "kv_kib_before": 56350.8,
+        "kv_kib_after": 42137.6,
+        "kv_kib_dropped": 14213.2,
+        "kv_kib_expected": 14208.0,
+        "pass": true
+      },
+      "timings_ms_median": {
+        "prefill": 15147,
+        "answer": 2004,
+        "replace": 283
+      },
+      "n_tokens": 1976,
+      "runs": 5
+    },
+    {
+      "doc": "1904.09237",
+      "question": "What is the caption of Algorithm 1?",
+      "seq_A": 1,
+      "choice": "anchor found",
+      "answer": " $\\boxed{Generic Adaptive Method Setup}$",
+      "expected": "Generic Adaptive Method Setup",
+      "answer_correct": true,
+      "answer_same_every_run": true,
+      "test_a": {
+        "seq_B": 6,
+        "node": 18,
+        "recomputed_tokens": 261,
+        "pass": true
+      },
+      "test_b": {
+        "seq_C": 2,
+        "evicted_tokens": 163,
+        "kv_kib_before": 63198.2,
+        "kv_kib_after": 57980.3,
+        "kv_kib_dropped": 5217.9,
+        "kv_kib_expected": 5216.0,
+        "pass": true
+      },
+      "timings_ms_median": {
+        "prefill": 17152,
+        "answer": 780,
+        "replace": 1919
+      },
+      "n_tokens": 1999,
+      "runs": 5
+    },
+    {
+      "doc": "2006.11239",
+      "question": "What is the caption of Algorithm 1?",
+      "seq_A": 3,
+      "choice": "anchor found",
+      "answer": " $\\text{dog}",
+      "expected": "Training",
+      "answer_correct": false,
+      "answer_same_every_run": true,
+      "test_a": {
+        "seq_B": 5,
+        "node": 24,
+        "recomputed_tokens": 415,
+        "pass": true
+      },
+      "test_b": {
+        "seq_C": 1,
+        "evicted_tokens": 150,
+        "kv_kib_before": 52759.4,
+        "kv_kib_after": 47957.6,
+        "kv_kib_dropped": 4801.8,
+        "kv_kib_expected": 4800.0,
+        "pass": true
+      },
+      "timings_ms_median": {
+        "prefill": 21154,
+        "answer": 1266,
+        "replace": 4811
+      },
+      "n_tokens": 1998,
+      "runs": 5
+    }
+  ],
+  "skipped": []
+}

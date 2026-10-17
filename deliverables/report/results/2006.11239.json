@@ -1,0 +1,34 @@
+{
+  "doc_id": "2006.11239",
+  "seq": 3,
+  "question": "What is the caption of Algorithm 1?",
+  "runs": 5,
+  "n_tokens": 1998,
+  "answer": " $\\text{dog}",
+  "answer_same_every_run": true,
+  "prefill_ms_median": 21154.423,
+  "prefill_ms_all": [
+    17146,
+    17850,
+    21154,
+    24511,
+    22811
+  ],
+  "answer_ms_median": 1265.579,
+  "prefill_tok_per_s_median": 94.44833357071475,
+  "replace": {
+    "node": 24,
+    "seq": 5,
+    "recomputed_tokens": 415,
+    "ms_median": 4811.321,
+    "identical_every_run": true
+  },
+  "evict": {
+    "seq": 1,
+    "p0": 186,
+    "p1": 336,
+    "kv_kib_before": 52759.3525390625,
+    "kv_kib_after": 47957.5947265625,
+    "identical_every_run": true
+  }
+}

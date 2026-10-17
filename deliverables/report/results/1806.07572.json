@@ -1,0 +1,34 @@
+{
+  "doc_id": "1806.07572",
+  "seq": 1,
+  "question": "What is the input distribution assumed to be?",
+  "runs": 5,
+  "n_tokens": 1976,
+  "answer": " The input distribution is assumed to be the empirical distribution on a finite dataset $x_1, ..., x_N$",
+  "answer_same_every_run": true,
+  "prefill_ms_median": 15147.213,
+  "prefill_ms_all": [
+    14822,
+    16066,
+    14628,
+    15147,
+    15238
+  ],
+  "answer_ms_median": 2003.829,
+  "prefill_tok_per_s_median": 130.45304109739527,
+  "replace": {
+    "node": 16,
+    "seq": 6,
+    "recomputed_tokens": 25,
+    "ms_median": 283.145,
+    "identical_every_run": true
+  },
+  "evict": {
+    "seq": 2,
+    "p0": 376,
+    "p1": 820,
+    "kv_kib_before": 56350.7978515625,
+    "kv_kib_after": 42137.5947265625,
+    "identical_every_run": true
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "doc_id": "1706.03762",
+  "seq": 4,
+  "question": "What BLEU score does the Transformer (big) achieve on English-to-German?",
+  "runs": 5,
+  "n_tokens": 1998,
+  "answer": " \\textbf{41.8",
+  "answer_same_every_run": true,
+  "prefill_ms_median": 17392.777,
+  "prefill_ms_all": [
+    15634,
+    17876,
+    17499,
+    16778,
+    17393
+  ],
+  "answer_ms_median": 975.261,
+  "prefill_tok_per_s_median": 114.87527264910027,
+  "replace": {
+    "node": 22,
+    "seq": 5,
+    "recomputed_tokens": 308,
+    "ms_median": 2941.744,
+    "identical_every_run": true
+  },
+  "evict": {
+    "seq": 1,
+    "p0": 244,
+    "p1": 396,
+    "kv_kib_before": 60699.3916015625,
+    "kv_kib_after": 55833.6103515625,
+    "identical_every_run": true
+  }
+}

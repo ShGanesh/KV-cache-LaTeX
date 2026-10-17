@@ -1,0 +1,18 @@
+n_gen = 32, kv_unified = true, flash_attn = on
+
+prompt 0 (seq 0 in the joint run)
+  joint   : 
+\begin{align*}
+\int_{0}^{1} f_{\theta}(x) dx &= \frac{1}{2} \
+  separate: 
+\begin{align*}
+\int_{0}^{1} f_{\theta}(x) dx &= \frac{1}{2} \
+  tokens identical: YES   max |logit diff| over 32 steps: 0
+
+prompt 1 (seq 1 in the joint run)
+  joint   :  the critic learned to predict the mean of the 10th percentile of the data. The mean of the 10th percentile is 0.5. The
+  separate:  the critic learned to predict the mean of the 10th percentile of the data. The mean of the 10th percentile is 0.5. The
+  tokens identical: YES   max |logit diff| over 32 steps: 0
+
+time: joint 2533 ms | separate 1834 + 1791 = 3625 ms
+RESULT: PASS

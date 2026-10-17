@@ -1,0 +1,34 @@
+{
+  "doc_id": "1406.2661",
+  "seq": 1,
+  "question": "In Algorithm 1, what value of k was used in the experiments?",
+  "runs": 5,
+  "n_tokens": 1997,
+  "answer": " 1",
+  "answer_same_every_run": true,
+  "prefill_ms_median": 16399.972,
+  "prefill_ms_all": [
+    16540,
+    19669,
+    16031,
+    16400,
+    16357
+  ],
+  "answer_ms_median": 547.125,
+  "prefill_tok_per_s_median": 121.76850058036683,
+  "replace": {
+    "node": 18,
+    "seq": 5,
+    "recomputed_tokens": 26,
+    "ms_median": 307.476,
+    "identical_every_run": true
+  },
+  "evict": {
+    "seq": 2,
+    "p0": 243,
+    "p1": 621,
+    "kv_kib_before": 62109.7587890625,
+    "kv_kib_after": 50009.3291015625,
+    "identical_every_run": true
+  }
+}

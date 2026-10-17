@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "LaTeX paper as a KV-cache tree",
+  "description": "One parsed paper. Merge rules: MERGE_RULES.md (same folder).",
+  "type": "object",
+  "required": ["doc_id", "params", "n_seq", "nodes"],
+  "properties": {
+    "doc_id": { "type": "string", "description": "arXiv id, e.g. 1701.07875" },
+    "params": {
+      "type": "object",
+      "required": ["MIN_TOKENS", "MAX_GROUPS", "MAX_REFS"],
+      "properties": {
+        "MIN_TOKENS": { "type": "integer" },
+        "MAX_GROUPS": { "type": "integer" },
+        "MAX_REFS":   { "type": "integer" }
+      }
+    },
+    "n_seq": {
+      "type": "integer",
+      "description": "Sequences used: seq 0 holds only the root, groups are seqs 1..n_seq-1."
+    },
+    "ref_stats": {
+      "type": "object",
+      "description": "How the paper's references were handled (MERGE_RULES.md pass 4): shared, same_group, forward, unresolved, over_max_refs, duplicate_labels."
+    },
+    "nodes": {
+      "type": "array",
+      "description": "Pre-order (document order). nodes[i].id == i; nodes[0] is the document.",
+      "items": {
+        "type": "object",
+        "required": ["id", "node_type", "parent", "text", "tokens", "positions", "seq_ids"],
+        "properties": {
+          "id":        { "type": "integer" },
+          "node_type": {
+            "enum": ["document", "section", "subsection", "subsubsection",
+                     "root", "heading", "paragraph", "theorem", "proof", "float"],
+            "description": "document/section/subsection/subsubsection are containers (no tokens); the rest are leaves."
+          },
+          "parent":    { "type": ["integer", "null"], "description": "id of the containing node; null for the document" },
+          "text":      { "type": "string", "description": "the leaf's LaTeX source, verbatim; empty for containers" },
+          "tokens":    { "type": "array", "items": { "type": "integer" }, "description": "token ids; only the root starts with BOS" },
+          "positions": { "type": "array", "items": { "type": "integer" }, "description": "one per token, counted per sequence" },
+          "seq_ids":   {
+            "type": "array", "items": { "type": "integer" },
+            "description": "root: every seq. Other leaves: [home seq, then seqs that receive it via seq_cp]. Containers: []."
+          },
+          "n_markup":  { "type": "integer", "description": "how many of this leaf's tokens are pure markup" }
+        }
+      }
+    }
+  }
+}

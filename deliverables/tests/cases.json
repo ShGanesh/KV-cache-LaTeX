@@ -1,0 +1,12 @@
+{
+  "replace_text": "This block was replaced for the isolation test; its new keyword is Zorvex-17.\n",
+  "default_question": "What is this part of the paper about?",
+  "cases": [
+    {"doc": "1406.2661",  "question": "In Algorithm 1, what value of k was used in the experiments?",           "anchor": "We used $k=1$",                               "expected": "1"},
+    {"doc": "1701.07875", "question": "What is the name of the example labelled exa::lines?",                     "anchor": "Learning parallel lines",                     "expected": "Learning parallel lines"},
+    {"doc": "1706.03762", "question": "What BLEU score does the Transformer (big) achieve on English-to-German?", "anchor": "tab:wmt-results",                             "expected": "28.4"},
+    {"doc": "1806.07572", "question": "What is the input distribution assumed to be?",                             "anchor": "empirical distribution on a finite dataset", "expected": "empirical"},
+    {"doc": "1904.09237", "question": "What is the caption of Algorithm 1?",                                       "anchor": "Generic Adaptive Method Setup",               "expected": "Generic Adaptive Method Setup"},
+    {"doc": "2006.11239", "question": "What is the caption of Algorithm 1?",                                       "anchor": "\\caption{Training}",                         "expected": "Training"}
+  ]
+}

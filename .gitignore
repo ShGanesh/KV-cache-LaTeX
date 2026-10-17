@@ -1,0 +1,27 @@
+# Model, llama.cpp checkout/build, raw downloads: re-created by setup.sh
+models/
+llama.cpp/
+data/raw/
+data/flat/
+data/json/
+
+# personal notes and editor settings
+reference_files/
+.vscode/
+
+# Compiled programs (build.sh makes <dir>/<name> from <dir>/<name>.cpp)
+deliverables/tests/*
+!deliverables/tests/*.cpp
+!deliverables/tests/*.py
+!deliverables/tests/*.json
+deliverables/driver/*
+!deliverables/driver/*.cpp
+!deliverables/driver/*.py
+deliverables/parser/*
+!deliverables/parser/*.py
+!deliverables/parser/*.cpp
+__pycache__/
+
+# logs and conda leftovers
+*.log
+condaenv.*.requirements.txt
